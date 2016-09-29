@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Ryu</title>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id='my-div'></div>
+
+    <script>
+        $('#my-div').append('<img src="http://i.imgur.com/90Mmdcm.png" />');
+
+        $('#my-div img').hover( function(){
+            this.src = 'http://i.imgur.com/nTj3Fxx.gif'
+        }, function(){
+            this.src = 'http://i.imgur.com/90Mmdcm.png'
+        })
+
+        $('#my-div img').mousedown( function(){
+            this.src = 'http://i.imgur.com/Rfj0a80.png'
+        })
+    </script>
+</body>
+</html>
