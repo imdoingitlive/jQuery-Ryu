@@ -26,6 +26,14 @@
                 '<img class="hadouken" src="http://i.imgur.com/oTyQRvX.gif" />'
             )
         })
+
+        $('#my-div img').mousedown( function(){
+            $('.hadouken').animate( {
+                "margin-left": "600px"
+            }, 1000, 'swing', function(){
+                this.remove();
+            })
+        })
     </script>
 </body>
 </html>
