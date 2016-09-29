@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>jQuery Ryu</title>
+  <link rel="stylesheet" href="style.css" type='text/css'>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -18,6 +19,12 @@
 
         $('#my-div img').mousedown( function(){
             this.src = 'http://i.imgur.com/Rfj0a80.png'
+        })
+
+        $('#my-div img').mousedown( function(){
+            $('#my-div').append(
+                '<img class="hadouken" src="http://i.imgur.com/oTyQRvX.gif" />'
+            )
         })
     </script>
 </body>
